@@ -15,9 +15,6 @@ import java.util.concurrent.TimeUnit;
 public class BaseClass {
     private WebDriver driver;
 
-    public WebDriver getDriver() {
-        return driver;
-    }
     /**
      * initialize the browser
      * */
@@ -44,6 +41,11 @@ public class BaseClass {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
+
+    public WebDriver getDriver() {
+        return driver;
+    }
+
     /**
      * read property files
      *

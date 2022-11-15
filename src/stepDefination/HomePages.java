@@ -1,6 +1,7 @@
 package stepDefination;
 
 import lib.PageActions;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,11 +13,21 @@ public class HomePages extends PageActions {
     private final WebDriver driver;
     public HomePages(WebDriver driver){
         this.driver=driver;
-        PageFactory.initElements(driver, this);
     }
+    By websiteTitle = By.xpath("//div[@class='logo']/a");
+    By getHomeMenu = By.xpath("//div[@class='top-nav']/ul/li[1]/a");
+    By getContactMenu = By.xpath("//div[@class='top-nav']/ul/li[2]/a");
+    By getSliderImg1 = By.xpath("//ul[@id='slider1']/li[1]/img");
+    By getSliderImg2 = By.xpath("//ul[@id='slider1']/li[2]/img");
+    By getSliderImg3 = By.xpath("//ul[@id='slider1']/li[3]/img");
 
-    @FindBy(xpath="//div[@class='logo']/a")
-    private WebElement websiteTitle;
-
-
+    public String verifyHomePageTitle() {
+        return getElementText(driver, websiteTitle);
+    }
+    public String verifyHomeMenuOnHomePage() {
+        return getElementText(driver, getHomeMenu);
+    }
+    public String verifyContactMenuOnHomePage() {
+        return getElementText(driver, getContactMenu);
+    }
 }
