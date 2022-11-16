@@ -1,0 +1,57 @@
+12:30:48.342 INFO  testCases.TC_01_validateHomePage:22 - Test
+15:04:56.607 INFO  testCases.TC_01_validateHomePage:22 - Start Application
+15:05:49.671 INFO  testCases.TC_01_validateHomePage:50 - Assert menu
+15:05:49.719 INFO  testCases.TC_01_validateHomePage:56 - Assert slider image
+15:05:49.784 INFO  testCases.TC_01_validateHomePage:64 - Assert patient title
+15:05:49.816 INFO  testCases.TC_01_validateHomePage:66 - Assert patient description
+15:05:49.849 INFO  testCases.TC_01_validateHomePage:68 - Assert button text
+15:05:49.881 INFO  testCases.TC_01_validateHomePage:75 - Assert doctor image
+15:05:49.914 INFO  testCases.TC_01_validateHomePage:77 - Assert doctor login text
+15:05:49.947 INFO  testCases.TC_01_validateHomePage:79 - Assert doctor btn
+15:05:49.979 INFO  testCases.TC_01_validateHomePage:86 - Assert admin image
+15:05:50.011 INFO  testCases.TC_01_validateHomePage:88 - Assert admin text
+15:05:50.050 INFO  testCases.TC_01_validateHomePage:90 - Assert admin click button
+15:05:50.080 INFO  testCases.TC_01_validateHomePage:97 - Assert footer home menu
+15:05:50.113 INFO  testCases.TC_01_validateHomePage:99 - Assert footer contact menu
+15:05:50.318 INFO  testCases.TC_01_validateHomePage:104 - Close app
+15:06:29.043 INFO  testCases.TC_01_validateHomePage:22 - Start Application
+15:06:29.063 INFO  testCases.TC_01_validateHomePage:28 - Assert title
+15:06:34.142 INFO  testCases.TC_01_validateHomePage:34 - Assert Broken Links
+15:06:34.176 INFO  testCases.TC_01_validateHomePage:41 - Assert home page
+15:06:34.325 INFO  testCases.TC_01_validateHomePage:104 - Close app
+15:36:20.497 INFO  testCases.TC_01_validateHomePage:22 - Start Application
+15:36:20.519 INFO  testCases.TC_01_validateHomePage:28 - Assert title
+15:36:23.444 INFO  testCases.TC_01_validateHomePage:34 - Assert Broken Links
+15:36:23.491 INFO  testCases.TC_01_validateHomePage:41 - Assert home page
+15:36:23.562 INFO  testCases.TC_01_validateHomePage:50 - Assert menu
+15:36:23.598 INFO  testCases.TC_01_validateHomePage:56 - Assert slider image
+15:36:23.669 INFO  testCases.TC_01_validateHomePage:64 - Assert patient title
+15:36:23.700 INFO  testCases.TC_01_validateHomePage:66 - Assert patient description
+15:36:23.730 INFO  testCases.TC_01_validateHomePage:68 - Assert button text
+15:36:23.779 INFO  testCases.TC_01_validateHomePage:75 - Assert doctor image
+15:36:23.807 INFO  testCases.TC_01_validateHomePage:77 - Assert doctor login text
+15:36:23.836 INFO  testCases.TC_01_validateHomePage:79 - Assert doctor btn
+15:36:23.885 INFO  testCases.TC_01_validateHomePage:86 - Assert admin image
+15:36:23.913 INFO  testCases.TC_01_validateHomePage:88 - Assert admin text
+15:36:23.944 INFO  testCases.TC_01_validateHomePage:90 - Assert admin click button
+15:36:23.974 INFO  testCases.TC_01_validateHomePage:97 - Assert footer home menu
+15:36:24.005 INFO  testCases.TC_01_validateHomePage:99 - Assert footer contact menu
+15:36:24.169 INFO  testCases.TC_01_validateHomePage:104 - Close app
+15:37:10.159 INFO  testCases.TC_01_validateHomePage:22 - Start Application
+15:37:10.179 INFO  testCases.TC_01_validateHomePage:28 - Assert title
+15:37:12.577 INFO  testCases.TC_01_validateHomePage:34 - Assert Broken Links
+15:37:12.613 INFO  testCases.TC_01_validateHomePage:41 - Assert home page
+15:37:12.671 INFO  testCases.TC_01_validateHomePage:50 - Assert menu
+15:37:12.722 INFO  testCases.TC_01_validateHomePage:56 - Assert slider image
+15:37:12.797 INFO  testCases.TC_01_validateHomePage:64 - Assert patient title
+15:37:12.826 INFO  testCases.TC_01_validateHomePage:66 - Assert patient description
+15:37:12.858 INFO  testCases.TC_01_validateHomePage:68 - Assert button text
+15:37:12.907 INFO  testCases.TC_01_validateHomePage:75 - Assert doctor image
+15:37:12.935 INFO  testCases.TC_01_validateHomePage:77 - Assert doctor login text
+15:37:12.967 INFO  testCases.TC_01_validateHomePage:79 - Assert doctor btn
+15:37:12.997 INFO  testCases.TC_01_validateHomePage:86 - Assert admin image
+15:37:13.028 INFO  testCases.TC_01_validateHomePage:88 - Assert admin text
+15:37:13.058 INFO  testCases.TC_01_validateHomePage:90 - Assert admin click button
+15:37:13.085 INFO  testCases.TC_01_validateHomePage:97 - Assert footer home menu
+15:37:13.118 INFO  testCases.TC_01_validateHomePage:99 - Assert footer contact menu
+15:37:13.267 INFO  testCases.TC_01_validateHomePage:104 - Close app
