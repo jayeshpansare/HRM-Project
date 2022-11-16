@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-16T15:37:43 IST" name="All Test Suite" finished-at="2022-11-16T15:37:50 IST" duration-ms="6346">
+    <groups>
+      <group name="smoke">
+        <method signature="TC_01_validateHomePage.verifyAdminSection()[pri:6, instance:testCases.TC_01_validateHomePage@5829e4f4]" name="verifyAdminSection" class="testCases.TC_01_validateHomePage"/>
+        <method signature="TC_01_validateHomePage.verifyBrokenLinks()[pri:1, instance:testCases.TC_01_validateHomePage@5829e4f4]" name="verifyBrokenLinks" class="testCases.TC_01_validateHomePage"/>
+        <method signature="TC_01_validateHomePage.verifyDoctorSection()[pri:5, instance:testCases.TC_01_validateHomePage@5829e4f4]" name="verifyDoctorSection" class="testCases.TC_01_validateHomePage"/>
+        <method signature="TC_01_validateHomePage.verifyFooterSection()[pri:7, instance:testCases.TC_01_validateHomePage@5829e4f4]" name="verifyFooterSection" class="testCases.TC_01_validateHomePage"/>
+        <method signature="TC_01_validateHomePage.verifyHomePageTitle()[pri:1, instance:testCases.TC_01_validateHomePage@5829e4f4]" name="verifyHomePageTitle" class="testCases.TC_01_validateHomePage"/>
+        <method signature="TC_01_validateHomePage.verifyImageOnHomePage()[pri:3, instance:testCases.TC_01_validateHomePage@5829e4f4]" name="verifyImageOnHomePage" class="testCases.TC_01_validateHomePage"/>
+        <method signature="TC_01_validateHomePage.verifyMenu()[pri:2, instance:testCases.TC_01_validateHomePage@5829e4f4]" name="verifyMenu" class="testCases.TC_01_validateHomePage"/>
+        <method signature="TC_01_validateHomePage.verifyPatientSection()[pri:4, instance:testCases.TC_01_validateHomePage@5829e4f4]" name="verifyPatientSection" class="testCases.TC_01_validateHomePage"/>
+        <method signature="TC_01_validateHomePage.verifyTitle()[pri:0, instance:testCases.TC_01_validateHomePage@5829e4f4]" name="verifyTitle" class="testCases.TC_01_validateHomePage"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2022-11-16T15:37:43 IST" name="C:/Users/Mahesh/IdeaProjects/HRM-Project" finished-at="2022-11-16T15:37:50 IST" duration-ms="6346">
+      <class name="testCases.TC_01_validateHomePage">
+        <test-method is-config="true" signature="init()[pri:0, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:43 IST" name="init" finished-at="2022-11-16T15:37:45 IST" duration-ms="2131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="verifyTitle()[pri:0, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:45 IST" name="verifyTitle" finished-at="2022-11-16T15:37:45 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method signature="verifyBrokenLinks()[pri:1, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:45 IST" name="verifyBrokenLinks" finished-at="2022-11-16T15:37:49 IST" duration-ms="3539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokenLinks -->
+        <test-method signature="verifyHomePageTitle()[pri:1, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:49 IST" name="verifyHomePageTitle" finished-at="2022-11-16T15:37:49 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method signature="verifyMenu()[pri:2, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:49 IST" name="verifyMenu" finished-at="2022-11-16T15:37:49 IST" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMenu -->
+        <test-method signature="verifyImageOnHomePage()[pri:3, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:49 IST" name="verifyImageOnHomePage" finished-at="2022-11-16T15:37:49 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyImageOnHomePage -->
+        <test-method signature="verifyPatientSection()[pri:4, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:49 IST" name="verifyPatientSection" finished-at="2022-11-16T15:37:49 IST" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPatientSection -->
+        <test-method signature="verifyDoctorSection()[pri:5, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:49 IST" name="verifyDoctorSection" finished-at="2022-11-16T15:37:49 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDoctorSection -->
+        <test-method signature="verifyAdminSection()[pri:6, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:49 IST" name="verifyAdminSection" finished-at="2022-11-16T15:37:49 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminSection -->
+        <test-method signature="verifyFooterSection()[pri:7, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:49 IST" name="verifyFooterSection" finished-at="2022-11-16T15:37:49 IST" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFooterSection -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:49 IST" name="close" finished-at="2022-11-16T15:37:50 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testCases.TC_01_validateHomePage -->
+    </test> <!-- C:/Users/Mahesh/IdeaProjects/HRM-Project -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
