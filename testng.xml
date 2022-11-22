@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="HMS Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/Mahesh/IdeaProjects/HRM-Project">
         <classes>
-            <class name="testCases.TC_01_validateHomePage">
-                <methods>
-                    <include name="verifyTitle"/>
-                    <include name="verifyBrokenLinks"/>
-                    <include name="verifyHomePageTitle"/>
-                    <include name="verifyMenu"/>
-                    <include name="verifyImageOnHomePage"/>
-                    <include name="verifyPatientSection"/>
-                    <include name="verifyDoctorSection"/>
-                    <include name="verifyAdminSection"/>
-                    <include name="verifyFooterSection"/>
-                </methods>
-            </class>
-
-            <class name="testCases.TC_02_validateAdminLoginPage">
-                <methods>
-                    <include name="openAdminLoginPage"/>
-                </methods>
-            </class>
-
+            <class name="testCases.TC_01_validateHomePage"></class>
+            <class name="testCases.TC_02_validateAdminLoginPage"></class>
+            <class name="testCases.TC_03_validateDashboardPage"></class>
         </classes>
     </test>
 </suite>

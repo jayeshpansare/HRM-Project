@@ -1,68 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-16T15:37:43 IST" name="All Test Suite" finished-at="2022-11-16T15:37:50 IST" duration-ms="6346">
+  <suite started-at="2022-11-20T16:56:11 IST" name="HMS Test Suite" finished-at="2022-11-20T16:56:19 IST" duration-ms="7706">
     <groups>
       <group name="smoke">
-        <method signature="TC_01_validateHomePage.verifyAdminSection()[pri:6, instance:testCases.TC_01_validateHomePage@5829e4f4]" name="verifyAdminSection" class="testCases.TC_01_validateHomePage"/>
-        <method signature="TC_01_validateHomePage.verifyBrokenLinks()[pri:1, instance:testCases.TC_01_validateHomePage@5829e4f4]" name="verifyBrokenLinks" class="testCases.TC_01_validateHomePage"/>
-        <method signature="TC_01_validateHomePage.verifyDoctorSection()[pri:5, instance:testCases.TC_01_validateHomePage@5829e4f4]" name="verifyDoctorSection" class="testCases.TC_01_validateHomePage"/>
-        <method signature="TC_01_validateHomePage.verifyFooterSection()[pri:7, instance:testCases.TC_01_validateHomePage@5829e4f4]" name="verifyFooterSection" class="testCases.TC_01_validateHomePage"/>
-        <method signature="TC_01_validateHomePage.verifyHomePageTitle()[pri:1, instance:testCases.TC_01_validateHomePage@5829e4f4]" name="verifyHomePageTitle" class="testCases.TC_01_validateHomePage"/>
-        <method signature="TC_01_validateHomePage.verifyImageOnHomePage()[pri:3, instance:testCases.TC_01_validateHomePage@5829e4f4]" name="verifyImageOnHomePage" class="testCases.TC_01_validateHomePage"/>
-        <method signature="TC_01_validateHomePage.verifyMenu()[pri:2, instance:testCases.TC_01_validateHomePage@5829e4f4]" name="verifyMenu" class="testCases.TC_01_validateHomePage"/>
-        <method signature="TC_01_validateHomePage.verifyPatientSection()[pri:4, instance:testCases.TC_01_validateHomePage@5829e4f4]" name="verifyPatientSection" class="testCases.TC_01_validateHomePage"/>
-        <method signature="TC_01_validateHomePage.verifyTitle()[pri:0, instance:testCases.TC_01_validateHomePage@5829e4f4]" name="verifyTitle" class="testCases.TC_01_validateHomePage"/>
+        <method signature="TC_01_validateHomePage.verifyTitle()[pri:0, instance:testCases.TC_01_validateHomePage@49872d67]" name="verifyTitle" class="testCases.TC_01_validateHomePage"/>
+        <method signature="TC_02_validateAdminLoginPage.openAdminLoginPage()[pri:0, instance:testCases.TC_02_validateAdminLoginPage@56303b57]" name="openAdminLoginPage" class="testCases.TC_02_validateAdminLoginPage"/>
+        <method signature="TC_02_validateAdminLoginPage.validateInvalidLoginCreds(java.lang.String, java.lang.String)[pri:0, instance:testCases.TC_02_validateAdminLoginPage@56303b57]" name="validateInvalidLoginCreds" class="testCases.TC_02_validateAdminLoginPage"/>
+        <method signature="TC_02_validateAdminLoginPage.validatePageTitle()[pri:0, instance:testCases.TC_02_validateAdminLoginPage@56303b57]" name="validatePageTitle" class="testCases.TC_02_validateAdminLoginPage"/>
+        <method signature="TC_02_validateAdminLoginPage.validateValidLoginCreds(java.lang.String, java.lang.String)[pri:0, instance:testCases.TC_02_validateAdminLoginPage@56303b57]" name="validateValidLoginCreds" class="testCases.TC_02_validateAdminLoginPage"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2022-11-16T15:37:43 IST" name="C:/Users/Mahesh/IdeaProjects/HRM-Project" finished-at="2022-11-16T15:37:50 IST" duration-ms="6346">
+    <test started-at="2022-11-20T16:56:11 IST" name="C:/Users/Mahesh/IdeaProjects/HRM-Project" finished-at="2022-11-20T16:56:19 IST" duration-ms="7706">
       <class name="testCases.TC_01_validateHomePage">
-        <test-method is-config="true" signature="init()[pri:0, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:43 IST" name="init" finished-at="2022-11-16T15:37:45 IST" duration-ms="2131" status="PASS">
+        <test-method is-config="true" signature="initBrowser()[pri:0, instance:testCases.TC_01_validateHomePage@49872d67]" started-at="2022-11-20T16:56:11 IST" name="initBrowser" finished-at="2022-11-20T16:56:16 IST" duration-ms="4242" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="verifyTitle()[pri:0, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:45 IST" name="verifyTitle" finished-at="2022-11-16T15:37:45 IST" duration-ms="8" status="PASS">
+        </test-method> <!-- initBrowser -->
+        <test-method signature="verifyTitle()[pri:0, instance:testCases.TC_01_validateHomePage@49872d67]" started-at="2022-11-20T16:56:16 IST" name="verifyTitle" finished-at="2022-11-20T16:56:16 IST" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method signature="verifyBrokenLinks()[pri:1, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:45 IST" name="verifyBrokenLinks" finished-at="2022-11-16T15:37:49 IST" duration-ms="3539" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_01_validateHomePage@49872d67]" started-at="2022-11-20T16:56:16 IST" name="tearDown" finished-at="2022-11-20T16:56:16 IST" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyBrokenLinks -->
-        <test-method signature="verifyHomePageTitle()[pri:1, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:49 IST" name="verifyHomePageTitle" finished-at="2022-11-16T15:37:49 IST" duration-ms="32" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePageTitle -->
-        <test-method signature="verifyMenu()[pri:2, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:49 IST" name="verifyMenu" finished-at="2022-11-16T15:37:49 IST" duration-ms="58" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMenu -->
-        <test-method signature="verifyImageOnHomePage()[pri:3, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:49 IST" name="verifyImageOnHomePage" finished-at="2022-11-16T15:37:49 IST" duration-ms="41" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyImageOnHomePage -->
-        <test-method signature="verifyPatientSection()[pri:4, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:49 IST" name="verifyPatientSection" finished-at="2022-11-16T15:37:49 IST" duration-ms="114" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPatientSection -->
-        <test-method signature="verifyDoctorSection()[pri:5, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:49 IST" name="verifyDoctorSection" finished-at="2022-11-16T15:37:49 IST" duration-ms="95" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDoctorSection -->
-        <test-method signature="verifyAdminSection()[pri:6, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:49 IST" name="verifyAdminSection" finished-at="2022-11-16T15:37:49 IST" duration-ms="95" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAdminSection -->
-        <test-method signature="verifyFooterSection()[pri:7, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:49 IST" name="verifyFooterSection" finished-at="2022-11-16T15:37:49 IST" duration-ms="60" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFooterSection -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testCases.TC_01_validateHomePage@5829e4f4]" started-at="2022-11-16T15:37:49 IST" name="close" finished-at="2022-11-16T15:37:50 IST" duration-ms="133" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
+        </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_01_validateHomePage -->
+      <class name="testCases.TC_02_validateAdminLoginPage">
+        <test-method is-config="true" signature="initBrowser()[pri:0, instance:testCases.TC_02_validateAdminLoginPage@56303b57]" started-at="2022-11-20T16:56:16 IST" name="initBrowser" finished-at="2022-11-20T16:56:18 IST" duration-ms="1634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method signature="openAdminLoginPage()[pri:0, instance:testCases.TC_02_validateAdminLoginPage@56303b57]" started-at="2022-11-20T16:56:18 IST" name="openAdminLoginPage" finished-at="2022-11-20T16:56:19 IST" duration-ms="1284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAdminLoginPage -->
+        <test-method signature="validateInvalidLoginCreds(java.lang.String, java.lang.String)[pri:0, instance:testCases.TC_02_validateAdminLoginPage@56303b57]" started-at="2022-11-20T16:56:19 IST" name="validateInvalidLoginCreds" data-provider="loginInvalidDataProvider" finished-at="2022-11-20T16:56:19 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.io.FileNotFoundException:  (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.io.FileNotFoundException:  (The system cannot find the path specified)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:820)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+Caused by: java.io.FileNotFoundException:  (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at lib.XLUtils.getCellData(XLUtils.java:47)
+at testCases.TC_02_validateAdminLoginPage.loginInvalidDataProviderMethod(TC_02_validateAdminLoginPage.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
+... 24 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInvalidLoginCreds -->
+        <test-method signature="validatePageTitle()[pri:0, instance:testCases.TC_02_validateAdminLoginPage@56303b57]" started-at="2022-11-20T16:56:19 IST" name="validatePageTitle" finished-at="2022-11-20T16:56:19 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_02_validateAdminLoginPage@56303b57]" started-at="2022-11-20T16:56:19 IST" name="tearDown" finished-at="2022-11-20T16:56:19 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="validateValidLoginCreds(java.lang.String, java.lang.String)[pri:0, instance:testCases.TC_02_validateAdminLoginPage@56303b57]" started-at="2022-11-20T16:56:19 IST" name="validateValidLoginCreds" data-provider="loginValidDataProvider" finished-at="2022-11-20T16:56:19 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.io.FileNotFoundException:  (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.io.FileNotFoundException:  (The system cannot find the path specified)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:820)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+Caused by: java.io.FileNotFoundException:  (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at lib.XLUtils.getCellData(XLUtils.java:47)
+at testCases.TC_02_validateAdminLoginPage.loginValidDataProviderMethod(TC_02_validateAdminLoginPage.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
+... 24 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateValidLoginCreds -->
+      </class> <!-- testCases.TC_02_validateAdminLoginPage -->
     </test> <!-- C:/Users/Mahesh/IdeaProjects/HRM-Project -->
-  </suite> <!-- All Test Suite -->
+  </suite> <!-- HMS Test Suite -->
 </testng-results>

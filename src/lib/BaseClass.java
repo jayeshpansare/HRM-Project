@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -18,7 +20,10 @@ public class BaseClass {
     /**
      * initialize the browser
      * */
-    public void initBrowser(String URL, String browserName){
+    @BeforeClass
+    public void initBrowser() throws IOException {
+        String webURL = readProperty().getProperty("URL");
+        String browserName = readProperty().getProperty("BrowserName");
         switch (browserName){
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
@@ -37,7 +42,7 @@ public class BaseClass {
                 break;
         }
 
-        driver.get(URL);
+        driver.get(webURL);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
@@ -45,14 +50,11 @@ public class BaseClass {
     public WebDriver getDriver() {
         return driver;
     }
-
     /**
      * read property files
-     *
      * **/
     public static Properties readProperty() throws IOException {
         String projectPath = System.getProperty("user.dir");
-        System.out.println(projectPath);
         File file = new File(projectPath + "/src/config/config.properties");
         FileInputStream fin = new FileInputStream(file);
         Properties prop = new Properties();
@@ -61,8 +63,8 @@ public class BaseClass {
     }
     /**
      * close project
-     *
      * **/
+    @AfterClass
     public void tearDown(){
         getDriver().quit();
     }
