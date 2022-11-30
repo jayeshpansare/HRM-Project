@@ -25,14 +25,19 @@ public class PageActions {
         Actions actions= new Actions(driver);
         actions.moveToElement(driver.findElement(locator)).build().perform();
     }
-
     public void selectOptionByVisibleText(WebDriver driver, By locator, String text) {
         Select select  = new Select(driver.findElement(locator));
         select.selectByVisibleText(text);
     }
-
     public void selectOptionByIndex(WebDriver driver, By locator, int index) {
         Select select  = new Select(driver.findElement(locator));
         select.selectByIndex(index);
+    }
+    public void selectOptionByValue(WebDriver driver, By locator, String value) {
+        Select select  = new Select(driver.findElement(locator));
+        select.selectByValue(value);
+    }
+    public String getAttributrText(WebDriver driver, By locator, String toolTipName){
+        return driver.findElement(locator).getAttribute(toolTipName);
     }
 }
