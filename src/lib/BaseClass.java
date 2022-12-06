@@ -3,6 +3,7 @@ package lib;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -37,8 +38,12 @@ public class BaseClass {
                 // will do later
                 break;
             default:
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("start-maximized");
+                options.addArguments("disable-infobars");
+               // options.addArguments("headless");
                 WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
+                driver = new ChromeDriver(options);
                 break;
         }
 
@@ -66,6 +71,6 @@ public class BaseClass {
      * **/
     @AfterClass
     public void tearDown(){
-        getDriver().quit();
+        //getDriver().quit();
     }
 }
