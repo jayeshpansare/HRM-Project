@@ -6,6 +6,7 @@
             <class name="testCases.TC_01_validateHomePage"></class>
             <class name="testCases.TC_02_validateAdminLoginPage"></class>
             <class name="testCases.TC_03_validateDashboardPage"></class>
+            <class name="testCases.TC_05_validateUsers"></class>
         </classes>
     </test>
 </suite>
