@@ -46,7 +46,6 @@ public class BaseClass {
                 driver = new ChromeDriver(options);
                 break;
         }
-
         driver.get(webURL);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -71,6 +70,6 @@ public class BaseClass {
      * **/
     @AfterClass
     public void tearDown(){
-        //getDriver().quit();
+        getDriver().quit();
     }
 }

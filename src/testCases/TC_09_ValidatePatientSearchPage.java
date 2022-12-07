@@ -37,9 +37,10 @@ public class TC_09_ValidatePatientSearchPage extends BaseClass {
         AdminPatientSearch objAdminPatientSearch = new AdminPatientSearch(getDriver());
         objAdminPatientSearch.clickPatientSearchMenu();
         objAdminPatientSearch.searchPatient();
+        log.info("search patient info");
         Assert.assertEquals(objAdminPatientSearch.getPatientSearchResult(),"1. John 1234567890 male 2019-11-10 18:49:24");
+        log.info("validate patient info");
     }
-
     @DataProvider(name = "loginValidDataProvider")
     public Object[][] loginValidDataProviderMethod() throws IOException {
         XLUtils obj = new XLUtils();

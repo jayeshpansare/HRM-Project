@@ -35,24 +35,27 @@ public class TC_08_ValidateReportPage extends BaseClass {
     public void openPatientsSubMenu(){
         AdminReportPage objAdminReportPage = new AdminReportPage(getDriver());
         objAdminReportPage.openReportMenu();
+        log.info("open report menu");
     }
     @Test(priority=2, groups="")
     public void validateReportInfo(){
         AdminReportPage objAdminReportPage = new AdminReportPage(getDriver());
         Assert.assertEquals(objAdminReportPage.getReportPageTitle(), "BETWEEN DATES | REPORTS");
         Assert.assertEquals(objAdminReportPage.getBodyPageTitle(), "Between Dates Reports");
+        log.info("open report page");
     }
     @Test(priority=3, groups="")
     public void setdates(){
         AdminReportPage objAdminReportPage = new AdminReportPage(getDriver());
         objAdminReportPage.setDates();
+        log.info("set dates");
     }
     @Test(priority=4, groups="")
     public void validateTableinfo(){
         AdminReportPage objAdminReportPage = new AdminReportPage(getDriver());
         Assert.assertEquals(objAdminReportPage.getTableTitle(), "Report from 2020-12-06 to 2022-12-12");
         Assert.assertEquals(objAdminReportPage.getTableData(), "1. ABC 1234567891 Male 2022-06-19 12:51:21 2022-06-19 12:52:23");
-
+        log.info("assert results");
     }
     @DataProvider(name = "loginValidDataProvider")
     public Object[][] loginValidDataProviderMethod() throws IOException {

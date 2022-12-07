@@ -32,27 +32,30 @@ public class TC_04_validateDoctorPage extends BaseClass {
         adminLoginPageObj.validateLoginCreds(username, password);
         adminLoginPageObj.clickOnLoginBtn();
     }
-//    @Test(priority=1, groups="")
-//    public void openDoctorSubMenu() throws InterruptedException {
-//        AdminDoctorPage objAdminDoctorPage = new AdminDoctorPage(getDriver());
-//        objAdminDoctorPage.openDoctorMenu();
-//    }
-//    @Test(priority=2, groups="", dataProvider = "doctorSpecificationInvalidDataProvider")
-//    public void doctorSpecialization(String doctorData) throws InterruptedException {
-//        AdminDoctorPage objAdminDoctorPage = new AdminDoctorPage(getDriver());
-//        //objAdminDoctorPage.invalidDoctorSpecilization();
-//        String getDoctorErrorMessage = objAdminDoctorPage.validateDoctorSpecilization(doctorData);
-//        Assert.assertEquals(getDoctorErrorMessage, "Doctor Specialization added successfully !!");
-//    }
+    @Test(priority=1, groups="")
+    public void openDoctorSubMenu() throws InterruptedException {
+        AdminDoctorPage objAdminDoctorPage = new AdminDoctorPage(getDriver());
+        objAdminDoctorPage.openDoctorMenu();
+        log.info("open doctor menu");
+    }
+    @Test(priority=2, groups="", dataProvider = "doctorSpecificationInvalidDataProvider")
+    public void doctorSpecialization(String doctorData) throws InterruptedException {
+        AdminDoctorPage objAdminDoctorPage = new AdminDoctorPage(getDriver());
+        String getDoctorErrorMessage = objAdminDoctorPage.validateDoctorSpecilization(doctorData);
+        Assert.assertEquals(getDoctorErrorMessage, "Doctor Specialization added successfully !!");
+        log.info("Add doctor");
+    }
     @Test(priority=3, groups="")
     public void openAddDoctorPage(){
         AdminDoctorPage objAdminDoctorPage = new AdminDoctorPage(getDriver());
         objAdminDoctorPage.openAddDoctorMenu();
+        log.info("open doctor menu");
     }
     @Test(priority=4, groups="")
     public void addDoctorPage(){
         AdminDoctorPage objAdminDoctorPage = new AdminDoctorPage(getDriver());
         objAdminDoctorPage.addDoctorData();
+        log.info("Add doctor data");
     }
 
     @Test(priority=5, groups="")
@@ -66,6 +69,7 @@ public class TC_04_validateDoctorPage extends BaseClass {
     public void verifyAddDoctorAlertMsg() throws InterruptedException {
         AdminDoctorPage objAdminDoctorPage = new AdminDoctorPage(getDriver());
         objAdminDoctorPage.getAddDoctorAlertMsg();
+        log.info("Alert message");
         objAdminDoctorPage.clickOnAddDoctorAlert();
     }
     @Test(priority=7, groups="")
@@ -74,6 +78,7 @@ public class TC_04_validateDoctorPage extends BaseClass {
         Thread.sleep(1000);
         System.out.println(objAdminDoctorPage.getEditBtnToolTip());
         objAdminDoctorPage.clickOnEditBtn();
+        log.info("Open edit form");
     }
     @Test(priority=8, groups="")
     public void verifyEditPageTitle() throws InterruptedException {
