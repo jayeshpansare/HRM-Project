@@ -22,9 +22,7 @@ public class TC_03_validateDashboardPage extends BaseClass {
         String fileURL = projectPath+"\\src\\data\\login.xlsx";
         fileURLPath = fileURL;
     }
-
     private static final Logger log = LogManager.getLogger(TC_02_validateAdminLoginPage.class);
-
     @Test(priority=0, groups="", dataProvider = "loginValidDataProvider")
     public void validateValidLoginCreds(String username, String password){
         AdminLoginPage adminLoginPageObj = new AdminLoginPage(getDriver());
@@ -38,6 +36,7 @@ public class TC_03_validateDashboardPage extends BaseClass {
     public void validatedDashboard(){
         AdminDashboardPage objadminDashboardPage =  new AdminDashboardPage(getDriver());
         Assert.assertEquals(objadminDashboardPage.validateDashboardLogo(), "HMS");
+        log.info("Assert page title as="+objadminDashboardPage.validateDashboardLogo());
         Assert.assertEquals(objadminDashboardPage.validateProjectName(), "Hospital Management System");
 
         List<String> list=new ArrayList<String>();
@@ -56,10 +55,11 @@ public class TC_03_validateDashboardPage extends BaseClass {
         for(WebElement menuName :objDashboardMenu){
             if(list.contains(menuName.getText())){
                 Assert.assertTrue(true);
-                System.out.println(" Match");
+                log.info("valid Menu as "+menuName.getText());
             }else {
                 Assert.assertFalse(false);
                 System.out.println(menuName.getText());
+                log.info("Invalid Menu as "+menuName.getText());
             }
         }
 
@@ -77,16 +77,14 @@ public class TC_03_validateDashboardPage extends BaseClass {
         if(!ObjDashboardSubMenu.isEmpty()){
             for(String subMenu:ObjDashboardSubMenu){
                 if(listSubMenu.contains(subMenu)){
-                    System.out.println("Match");
+                    log.info("sections as "+subMenu);
                 }else {
-                    System.out.println(subMenu);
-                    System.out.println("Not match");
+                    log.info("sections does not match "+subMenu);
                 }
             }
         }
-
         objadminDashboardPage.logout();
-
+        log.info("log out");
     }
 
     @DataProvider(name = "loginValidDataProvider")

@@ -4623,3 +4623,4 @@
 15:03:23.608 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection:309 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
 15:03:23.609 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection:309 - Parsing relationship: /_rels/.rels
 15:03:24.693 INFO  testCases.TC_02_validateAdminLoginPage:29 - Open Login page
+15:14:08.766 INFO  testCases.TC_01_validateHomePage:15 - Assert title

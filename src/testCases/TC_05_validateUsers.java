@@ -17,9 +17,7 @@ public class TC_05_validateUsers extends BaseClass {
         String fileURL = projectPath+"\\src\\data\\login.xlsx";
         fileURLPath = fileURL;
     }
-
     private static final Logger log = LogManager.getLogger(TC_02_validateAdminLoginPage.class);
-
     @Test(priority=0, groups="", dataProvider = "loginValidDataProvider")
     public void validateValidLoginCreds(String username, String password){
         AdminLoginPage adminLoginPageObj = new AdminLoginPage(getDriver());
@@ -33,7 +31,7 @@ public class TC_05_validateUsers extends BaseClass {
     public void openUserSubMenu() throws InterruptedException {
         AdminUsersPage objAdminUserPage = new AdminUsersPage(getDriver());
         objAdminUserPage.openUsersMenu();
-
+        log.info("open user menu");
     }
     @DataProvider(name = "loginValidDataProvider")
     public Object[][] loginValidDataProviderMethod() throws IOException {

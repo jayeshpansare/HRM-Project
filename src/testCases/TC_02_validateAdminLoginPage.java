@@ -8,7 +8,6 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import stepDefination.AdminLoginPage;
-
 import java.io.IOException;
 
 public class TC_02_validateAdminLoginPage extends BaseClass {
@@ -53,6 +52,7 @@ public class TC_02_validateAdminLoginPage extends BaseClass {
         AdminLoginPage adminLoginPageObj = new AdminLoginPage(getDriver());
         adminLoginPageObj.validateLoginCreds(username, password);
         adminLoginPageObj.clickOnLoginBtn();
+        log.info("Login user");
     }
     /**
      * Data providers
