@@ -8,14 +8,22 @@ import java.util.*;
 
 public class test {
     public static void main(String[] args){
-        //list1 = {1,2,3,11} and list2 = {11,33,3,4}
-
-        List<String> list1 = new ArrayList<>();
-        list1.add("1");
-        list1.add("2");
-        list1.add("3");
-        list1.add("11");
-
-
+        String str = "good looking";
+        char[] ch = str.toCharArray();
+        HashSet<Character> set = new HashSet<>();
+        HashMap<Character, Integer> map = new HashMap<>();
+        for(char ch1 :ch){
+            if(map.containsKey(ch1)){
+                map.put(ch1, map.get(ch1)+1);
+            }else {
+                map.put(ch1, 1);
+            }
+            if(ch1!=' '){
+                set.add(ch1);
+            }
+        }
+        set.stream().sorted();
+        System.out.println(set);
+        System.out.println(map);
     }
 }
