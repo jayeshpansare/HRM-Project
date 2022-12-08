@@ -1,30 +1,15 @@
 package testCases;
-import gherkin.lexer.Th;
 import lib.BaseClass;
-import lib.XLUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openxmlformats.schemas.drawingml.x2006.main.ThemeDocument;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import stepDefination.AdminDoctorPage;
 import stepDefination.AdminLoginPage;
 
-import java.io.IOException;
-import java.net.Socket;
-
 public class TC_04_validateDoctorPage extends BaseClass {
-    static String fileURLPath = "";
-    static{
-        String projectPath = System.getProperty("user.dir");
-        String fileURL = projectPath+"\\src\\data\\login.xlsx";
-        fileURLPath = fileURL;
-    }
-
     private static final Logger log = LogManager.getLogger(TC_02_validateAdminLoginPage.class);
-
-    @Test(priority=0, groups="", dataProvider = "loginValidDataProvider")
+    @Test(priority=1, groups="smoke", dataProvider = "loginValidDataProvider")
     public void validateValidLoginCreds(String username, String password){
         AdminLoginPage adminLoginPageObj = new AdminLoginPage(getDriver());
         adminLoginPageObj.clickOnAdminBtn();
@@ -32,47 +17,46 @@ public class TC_04_validateDoctorPage extends BaseClass {
         adminLoginPageObj.validateLoginCreds(username, password);
         adminLoginPageObj.clickOnLoginBtn();
     }
-    @Test(priority=1, groups="")
+    @Test(priority=2, groups="smoke")
     public void openDoctorSubMenu() throws InterruptedException {
         AdminDoctorPage objAdminDoctorPage = new AdminDoctorPage(getDriver());
         objAdminDoctorPage.openDoctorMenu();
         log.info("open doctor menu");
     }
-    @Test(priority=2, groups="", dataProvider = "doctorSpecificationInvalidDataProvider")
+    @Test(priority=3, groups="smoke", dataProvider = "doctorSpecificationInvalidDataProvider")
     public void doctorSpecialization(String doctorData) throws InterruptedException {
         AdminDoctorPage objAdminDoctorPage = new AdminDoctorPage(getDriver());
         String getDoctorErrorMessage = objAdminDoctorPage.validateDoctorSpecilization(doctorData);
         Assert.assertEquals(getDoctorErrorMessage, "Doctor Specialization added successfully !!");
         log.info("Add doctor");
     }
-    @Test(priority=3, groups="")
+    @Test(priority=4, groups="smoke")
     public void openAddDoctorPage(){
         AdminDoctorPage objAdminDoctorPage = new AdminDoctorPage(getDriver());
         objAdminDoctorPage.openAddDoctorMenu();
         log.info("open doctor menu");
     }
-    @Test(priority=4, groups="")
+    @Test(priority=5, groups="smoke")
     public void addDoctorPage(){
         AdminDoctorPage objAdminDoctorPage = new AdminDoctorPage(getDriver());
         objAdminDoctorPage.addDoctorData();
         log.info("Add doctor data");
     }
-
-    @Test(priority=5, groups="")
+    @Test(priority=6, groups="smoke")
     public void verifyEmailMsg() throws InterruptedException {
         AdminDoctorPage objAdminDoctorPage = new AdminDoctorPage(getDriver());
         Assert.assertEquals(objAdminDoctorPage.verifyEmailMsg(), "Email available for Registration .");
         log.info("verify email message - "+objAdminDoctorPage.verifyEmailMsg());
         objAdminDoctorPage.clickAddDoctorForm();
     }
-    @Test(priority=6, groups="")
+    @Test(priority=7, groups="smoke")
     public void verifyAddDoctorAlertMsg() throws InterruptedException {
         AdminDoctorPage objAdminDoctorPage = new AdminDoctorPage(getDriver());
         objAdminDoctorPage.getAddDoctorAlertMsg();
         log.info("Alert message");
         objAdminDoctorPage.clickOnAddDoctorAlert();
     }
-    @Test(priority=7, groups="")
+    @Test(priority=8, groups="smoke")
     public void clickOnEditBtn() throws InterruptedException {
         AdminDoctorPage objAdminDoctorPage = new AdminDoctorPage(getDriver());
         Thread.sleep(1000);
@@ -80,7 +64,7 @@ public class TC_04_validateDoctorPage extends BaseClass {
         objAdminDoctorPage.clickOnEditBtn();
         log.info("Open edit form");
     }
-    @Test(priority=8, groups="")
+    @Test(priority=9, groups="smoke")
     public void verifyEditPageTitle() throws InterruptedException {
         AdminDoctorPage objAdminDoctorPage = new AdminDoctorPage(getDriver());
         System.out.println(objAdminDoctorPage.getEditPageTitle());
@@ -89,25 +73,10 @@ public class TC_04_validateDoctorPage extends BaseClass {
         System.out.println(objAdminDoctorPage.getRegDate());
     }
 
-    @Test(priority=9, groups="")
+    @Test(priority=10, groups="smoke")
     public void updateDoctorInfo() throws InterruptedException {
         AdminDoctorPage objAdminDoctorPage = new AdminDoctorPage(getDriver());
         objAdminDoctorPage.updateDoctorInfo();
         objAdminDoctorPage.clickOnUpdateDoctorBtn();
-    }
-    @DataProvider(name = "DoctorValidData")
-    public Object[][] doctorValidData() throws IOException {
-        return new Object[][] {{"Homeopath"}, {""}};
-    }
-    @DataProvider(name = "loginValidDataProvider")
-    public Object[][] loginValidDataProviderMethod() throws IOException {
-        XLUtils obj = new XLUtils();
-        return new Object[][] {{obj.getCellData(fileURLPath, "loginValid", 1,1), obj.getCellData(fileURLPath, "loginValid", 1,2)}};
-    }
-    @DataProvider(name = "doctorSpecificationInvalidDataProvider")
-    public Object[][] doctorInvalidDataProviderMethod() throws IOException {
-        XLUtils obj = new XLUtils();
-        return new Object[][] {{"Test"},
-                            {"Test@123"}};
     }
 }
