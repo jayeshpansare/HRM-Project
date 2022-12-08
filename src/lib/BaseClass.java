@@ -8,6 +8,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -16,8 +17,13 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
+    static String fileURLPath = "";
+    static{
+        String projectPath = System.getProperty("user.dir");
+        String fileURLPath = projectPath+"\\src\\data\\login.xlsx";
+        //fileURLPath = fileURL;
+    }
     private WebDriver driver;
-
     /**
      * initialize the browser
      * */
@@ -71,5 +77,27 @@ public class BaseClass {
     @AfterClass
     public void tearDown(){
         getDriver().quit();
+    }
+
+    /**
+     * Data providers
+     * **/
+    @DataProvider(name = "loginInvalidDataProvider")
+    public Object[][] loginInvalidDataProviderMethod() throws IOException {
+        XLUtils obj = new XLUtils();
+        return new Object[][] {
+                {obj.getCellData(fileURLPath, "loginInvalid", 1,1), obj.getCellData(fileURLPath, "loginInvalid", 1,2)},
+                {obj.getCellData(fileURLPath, "loginInvalid", 2,1), obj.getCellData(fileURLPath, "loginInvalid", 2,2)}
+        };
+    }
+    @DataProvider(name = "loginValidDataProvider")
+    public Object[][] loginValidDataProviderMethod() throws IOException {
+        XLUtils obj = new XLUtils();
+        return new Object[][] {{obj.getCellData(fileURLPath, "loginValid", 1,1), obj.getCellData(fileURLPath, "loginValid", 1,2)}};
+    }
+    @DataProvider(name = "doctorSpecificationInvalidDataProvider")
+    public Object[][] doctorInvalidDataProviderMethod() throws IOException {
+        return new Object[][] {{"Test"},
+                {"Test@123"}};
     }
 }

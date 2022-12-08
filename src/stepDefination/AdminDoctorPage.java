@@ -2,7 +2,6 @@ package stepDefination;
 
 import lib.PageActions;
 import lib.WaitActions;
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -43,15 +42,11 @@ public class AdminDoctorPage extends PageActions {
         objwait.expliciteWaitEleClickable(driver, 10, specilizationMenu);
         clickOnElement(driver, specilizationMenu);
     }
-
     public String validateDoctorSpecilization(String doctorData) throws InterruptedException {
         sendInput(driver, doctorspecilizationInpt, doctorData);
         Thread.sleep(1000);
         clickOnElement(driver, doctorSubmitBtn);
         return getElementText(driver, doctorErrorMsg);
-    }
-
-    public void validateDoctorSpecilization() {
     }
     public void openAddDoctorMenu() {
         WaitActions objwait= new WaitActions();
@@ -66,7 +61,7 @@ public class AdminDoctorPage extends PageActions {
         sendInput(driver, doctorClinicAddressInpt, "Test Address");
         sendInput(driver, doctorFreeinpt, "100");
         sendInput(driver, doctorNumberInpt, "9999999999");
-        sendInput(driver, doctorEmailId, "Testr15@gmail.com");
+        sendInput(driver, doctorEmailId, "Testr1509@gmail.com");
         sendInput(driver, passwordInpt, "Test");
         sendInput(driver, confirmPasswordInpt, "Test");
     }

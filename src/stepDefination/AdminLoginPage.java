@@ -27,8 +27,11 @@ public class AdminLoginPage extends PageActions {
         return driver.getTitle();
     }
     public void validateLoginCreds(String username, String password) {
+        WaitActions objWait = new WaitActions();
+        objWait.expliciteWaitVisibilityEle(driver, 10, adminUserName);
         clearInput(driver, adminUserName);
         sendInput(driver, adminUserName, username);
+        objWait.expliciteWaitVisibilityEle(driver, 10, adminPassword);
         clearInput(driver, adminPassword);
         sendInput(driver, adminPassword, password);
     }
